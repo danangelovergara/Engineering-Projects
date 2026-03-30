@@ -10,11 +10,11 @@
 | **Micro SD Card** | 8GB or 16GB (FAT32) | Non-volatile storage for MP3/WAV tracks. |
 | **Speaker** | 3W 4-Ohm or 8-Ohm | Audio output transducer. |
 | **WS2812B LED Strip** | 10–20 NeoPixels | Visual feedback via individually addressable digital signal. |
-| **10k$\Omega$ Potentiometer** | Linear Taper | Manual volume control via **Analog-to-Digital Conversion (ADC)**. |
+| **10kOmega Potentiometer** | Linear Taper | Manual volume control via **Analog-to-Digital Conversion (ADC)**. |
 | **Toggle Switch** | KCD1-5Pack Automotive Grade | Primary hardware power disconnect. |
 | **Momentary Buttons** | 3x Tactile Switches | Track navigation (Next/Prev) using **GPIO with Pull-ups**. |
-| **1000$\mu$F Capacitor** | Electrolytic | **Power Stability**: Decouples voltage spikes during audio surges. |
-| **1000$\Omega$ Resistor** | 1/4 Watt Metal Film | **Signal Integrity**: Current limiting for the DFPlayer RX line. |
+| **1000muF Capacitor** | Electrolytic | **Power Stability**: Decouples voltage spikes during audio surges. |
+| **1000Omega Resistor** | 1/4 Watt Metal Film | **Signal Integrity**: Current limiting for the DFPlayer RX line. |
 | **USB-B Cable** | Modified/Spliced | Custom power interface with integrated hardware switch. |
 | **Breadboard & Jumpers** | Half-size (400 pts) | Circuit prototyping and peripheral interconnects. |
 | **Enclosure Materials** | Balsa Wood, Foam Board, Dried Moss | Physical housing and "Passages Log" aesthetic decor. |
@@ -22,7 +22,7 @@
 ## 🛠 Technical Challenges & Engineering Solutions
 
 ### **1. Power Surge Mitigation**
-During initial testing, I identified audible "pops" and system instability when the audio module initiated playback. I resolved this by integrating a **1000$\mu$F decoupling capacitor** across the power rails to smooth out voltage spikes caused by the speaker's transient current draw.
+During initial testing, I identified audible "pops" and system instability when the audio module initiated playback. I resolved this by integrating a **1000muF decoupling capacitor** across the power rails to smooth out voltage spikes caused by the speaker's transient current draw.
 
 ### **2. Signal Integrity (UART)**
 To protect the DFPlayer Mini and ensure reliable data transmission, I implemented a **1000$\Omega$ resistor** on the RX line. This current-limiting measure ensures the $5\text{V}$ Arduino logic does not damage the $3.3\text{V}$ sensitive audio module.
@@ -37,5 +37,5 @@ Instead of relying on software-level sleep modes, I physically **spliced a USB-B
 * **BOM Documentation:** [Link to Excel/PDF Materials List] (Detailed tracking of all components used).
 
 * ## 🚀 Future Iterations
-* [cite_start]**PCB Fabrication:** Transition the current breadboard prototype into a custom **Printed Circuit Board (PCB)** layout using **Altium** or **KiCad** to reduce signal noise and improve portability.
-* [cite_start]**Power Management:** Incorporate a dedicated 3.3V/5V regulator circuit for more efficient power distribution.
+* **PCB Fabrication:** Transition the current breadboard prototype into a custom **Printed Circuit Board (PCB)** layout using **Altium** or **KiCad** to reduce signal noise and improve portability.
+* **Power Management:** Incorporate a dedicated 3.3V/5V regulator circuit for more efficient power distribution.
