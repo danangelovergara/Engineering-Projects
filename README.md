@@ -30,4 +30,4 @@ A custom audio player featuring real-time LCD feedback, hardware-level volume co
 ## 🎵 Project 2: Integrated Digital Audio System
 * **The Engineering Challenge:** Managing multiple communication protocols (I2C for LCD, UART for MP3) while ensuring power stability.
 * **Hardware Safety:** Integrated a **1000µF capacitor** for voltage smoothing and a **1000Ω resistor** for serial line protection.
-* **Status:** https://github.com/danangelovergara/Engineering-Projects/tree/main/Digital-Music-Box
+* **Status:** Finished --> https://github.com/danangelovergara/Engineering-Projects/tree/main/Digital-Music-Box
