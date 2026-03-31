@@ -33,6 +33,7 @@ Instead of relying on software-level sleep modes, I physically **spliced a USB-B
 ## 📸 Visual Documentation & Proof of Concept
 
 * **System Demonstration:** (https://youtube.com/shorts/5JEpGyczeCo?feature=share) (Demonstrates I2C display updates, track navigation, and volume scaling via ADC).
+* **Instructions:** (https://github.com/danangelovergara/Engineering-Projects/blob/main/Digital-Music-Box/Digital%20Music%20Box%20Instructions.pdf)
 
 * ## 🚀 Future Iterations
 * **PCB Fabrication:** Transition the current breadboard prototype into a custom **Printed Circuit Board (PCB)** layout using **Altium** or **KiCad** to reduce signal noise and improve portability.
