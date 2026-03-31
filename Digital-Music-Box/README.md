@@ -25,16 +25,14 @@
 During initial testing, I identified audible "pops" and system instability when the audio module initiated playback. I resolved this by integrating a **1000muF decoupling capacitor** across the power rails to smooth out voltage spikes caused by the speaker's transient current draw.
 
 ### **2. Signal Integrity (UART)**
-To protect the DFPlayer Mini and ensure reliable data transmission, I implemented a **1000$\Omega$ resistor** on the RX line. This current-limiting measure ensures the $5\text{V}$ Arduino logic does not damage the $3.3\text{V}$ sensitive audio module.
+To protect the DFPlayer Mini and ensure reliable data transmission, I implemented a **1000kOhm resistor** on the RX line. This current-limiting measure ensures the 5V Arduino logic does not damage the sensitive audio module.
 
 ### **3. Custom Hardware Power Toggle**
 Instead of relying on software-level sleep modes, I physically **spliced a USB-B cable** to integrate a manual toggle switch. This provides a hard power-cut for the entire system, demonstrating hands-on experience with cable modification and low-voltage electrical work.
 
 ## 📸 Visual Documentation & Proof of Concept
 
-* **System Demonstration:** [Link to Video / YouTube] (Demonstrates I2C display updates, track navigation, and volume scaling via ADC).
-* **Hardware Assembly:** [Link to Photo] (Shows the internal circuit layout, including the 1000µF capacitor and spliced USB-B power cable).
-* **BOM Documentation:** [Link to Excel/PDF Materials List] (Detailed tracking of all components used).
+* **System Demonstration:** (https://youtube.com/shorts/5JEpGyczeCo?feature=share) (Demonstrates I2C display updates, track navigation, and volume scaling via ADC).
 
 * ## 🚀 Future Iterations
 * **PCB Fabrication:** Transition the current breadboard prototype into a custom **Printed Circuit Board (PCB)** layout using **Altium** or **KiCad** to reduce signal noise and improve portability.
