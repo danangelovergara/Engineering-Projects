@@ -18,6 +18,10 @@ A 2-axis tracking system that uses computer vision to identify targets and trans
 **Embedded C | I2C & UART | Hardware Power Management**
 A custom audio player featuring real-time LCD feedback, hardware-level volume control, and power stabilization via decoupling capacitors.
 
+### 3. [Crow — ESP32 Stream Deck](#crow)
+**C++ | ESP32 | Windows Desktop | USB Serial**
+A customizable control deck with a Windows companion app and a 5×3 touchscreen interface for launching apps, opening websites, and triggering other actions.
+
 ---
 
 <a name="turret"></a>
@@ -31,3 +35,9 @@ A custom audio player featuring real-time LCD feedback, hardware-level volume co
 * **The Engineering Challenge:** Managing multiple communication protocols (I2C for LCD, UART for MP3) while ensuring power stability.
 * **Hardware Safety:** Integrated a **1000µF capacitor** for voltage smoothing and a **1000Ω resistor** for serial line protection.
 * **Status:** Finished --> https://github.com/danangelovergara/Engineering-Projects/tree/main/Digital-Music-Box
+
+<a name="crow"></a>
+## 🐦 Project 3: Crow — ESP32 Stream Deck
+* **The Engineering Challenge:** Connecting a Windows desktop companion to an ESP32 touchscreen panel over USB serial.
+* **Key Features:** A 5×3 touchscreen layout, customizable button images and actions, image cropping, profiles, and optional system-tray operation.
+* **Status:** Working and tested. 
